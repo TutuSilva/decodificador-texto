@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="header__">
+        <nav class="header__nav__">
+            <a href="#" class="header__nav__link">
+                <img src="medias/image/Frame6.png" alt="Logo Alura">
+            </a>
+        </nav>
+    </header>
+    <main class="main__">
+        <section class="main__principal__section__"> 
+            <section class="main__section__text__">
+                <textarea  class="main__section__text__textarea" id="main__section__text__id" cols="30" rows="10" placeholder="Digite seu Texto"></textarea>
+                <div class="main__div">
+                    <img class="main__div__img" src="medias/image/Frame1.png" alt="aviso somente letras minusculas sem acento.">
+                </div>
+            </section>
+            <section class="main__section__textbox__">
+                <textarea class="main__section__textbox__textarea" id="main__section__textbox__textarea__id" cols="30" rows="10"></textarea>
+                <img class="main__section__textbox__image" src="medias/image/Highqualityproducts11.png" alt="menino olhando para um diamante">
+                <h2 class="main__section__textbox__placeholder__subtitle">Nenhuma Mensagem Encontrada</h2>
+                <p class="main__section__textbox__placeholder__paragraph">Digite um texto que voce deseja criptografar ou descriptografar</p>
+            </section>
+        </section>
+        <section class="main__section__text__buttons">
+            <button class="main__section__text__buttons__encrypt" onclick="criptografia()">Criptografar</button>
+            <button class="main__section__text__buttons__decrypt" onclick="descriptografia()">Descriptografar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <p>Made with &#9825; in Minas Gerais, Brazil.</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
