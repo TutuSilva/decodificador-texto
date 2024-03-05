@@ -66,6 +66,7 @@ select:focus {
   display: flex;
   justify-content: baseline;
   padding: 1%;
+
 }
 
 .main__section__text__buttons {
