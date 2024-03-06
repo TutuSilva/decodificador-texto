@@ -27,3 +27,28 @@ function criptografia(textoCriptografado) {
   }
   return textoCriptografado;
 }
+
+function btnDescriptografia() {
+  const textoDesencriptar = descriptografia(textoDigitado.value);
+  textoDisplay.value = textoDesencriptar;
+}
+
+function descriptografia(textoDescriptografado) {
+  const arrayCriptografada = [
+    ["enter", "e"],
+    ["imes", "i"],
+    ["ai", "a"],
+    ["ober", "o"],
+    ["ufat", "u"],
+  ];
+  textoDescriptografado = textoDescriptografado.toLowerCase();
+  for (let i = 0; i < arrayCriptografada.length; i++) {
+    if (textoDescriptografado.includes(arrayCriptografada[i][0])) {
+      textoDescriptografado = textoDescriptografado.replaceAll(
+        arrayCriptografada[i][0],
+        arrayCriptografada[i][1]
+      );
+    }
+  }
+  return textoDescriptografado;
+}
