@@ -15,7 +15,7 @@ const copiarTexto = document.querySelector(
 
 function btnCopy() {
   navigator.clipboard.writeText(textoDisplay.value);
-  alert("Texto copiado com sucesso!");
+  alert("Texto copiado para sua area de transferencia.");
 }
 
 function limpaInfo() {
@@ -59,21 +59,23 @@ function criptografia(textoCriptografado) {
 
 function btnDescriptografia() {
   const textoDesencriptar = descriptografia(textoDigitado.value);
-  textoDisplay.value = textoDesencriptar;
-  if (textoDesencriptar === "") {
+  if (textoDigitado.value == "") {
     alert("O campo não pode ficar vazio.");
+    return;
   } else {
+    textoDisplay.value = textoDesencriptar;
+    textoDisplay.style.display = "block";
     limpaInfo();
   }
 }
 
 function descriptografia(textoDescriptografado) {
   const arrayCriptografada = [
-    ["imes", "i"],
-    ["enter", "e"],
-    ["ai", "a"],
-    ["ober", "o"],
     ["ufat", "u"],
+    ["ober", "o"],
+    ["ai", "a"],
+    ["enter", "e"],
+    ["imes", "i"],
   ];
   textoDescriptografado = textoDescriptografado.toLowerCase();
   for (let i = 0; i < arrayCriptografada.length; i++) {

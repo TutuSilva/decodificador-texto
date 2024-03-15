@@ -9,3 +9,4 @@ headerTrail.addEventListener("click", () => {
   display.classList.toggle("dark");
   textoUsuario.classList.toggle("dark");
 });
+

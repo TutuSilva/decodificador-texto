@@ -7,8 +7,9 @@
   --color--principal: #f6f1f1;
   --color--bgimage: #f6f6f6;
   --color--button: #05054b;
+
   --color--switch: #ccc9c9;
-  --color--switchbg: #040d12;
+  --color--switchbg: #232323;
 }
 body {
   font-family: var(--font--principal);
@@ -97,6 +98,7 @@ select:focus {
   padding-bottom: 1%;
   border-radius: 2rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 0.5rem 1.5rem;
+  overflow: hidden;
 }
 .main__section__textbox__.dark {
   background-color: var(--color--switchbg);

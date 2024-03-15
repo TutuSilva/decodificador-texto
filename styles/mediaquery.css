@@ -1,0 +1,244 @@
+/**
+ * Basic CSS Media Query Template
+ * TODO: I should probably use Sass...
+ * Author: Michael Vieth
+ * ------------------------------------------
+ *  Responsive Grid Media Queries - 1280, 1024, 768, 480
+ *   1280-1024   - desktop (default grid)
+ *   1024-768    - tablet landscape
+ *   768-480     - tablet 
+ *   480-less    - phone landscape & smaller
+ * --------------------------------------------
+ */
+@media all and (max-width: 480px) {
+  /* header alura*/
+  .header__nav__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* sessao que engloba onde digita o texto e onde mostra */
+  .main__principal__section__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* sessao onde digita o texto */
+  .main__section__text__textarea {
+    text-align: center;
+    width: 90vw;
+    padding: 0;
+  }
+
+  /* sessao onde fica as informacoes*/
+  .main__section__textbox__ {
+    height: 20vh;
+    margin: 10%;
+    width: 85%;
+  }
+ 
+  /* sessao onde o texto é mostrado */
+  .main__section__textbox__textarea {
+    width: 90%;
+  }
+  /* img menino olhando pro diamante*/
+  .main__section__textbox__image {
+    display: none;
+  }
+  /*alerta letras minusculas*/
+  .main__div {
+    display: flex;
+    justify-content: center;
+  }
+  /* botoes de cripto e descripto*/
+  .main__section__text__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  /*botao de copiar*/
+  .main__section__textbox__copybutton {
+    padding: 5%;
+    width: 100%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  /* header alura*/
+  .header__nav__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* sessao que engloba onde digita o texto e onde mostra */
+  .main__principal__section__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  /* sessao onde digita o texto */
+  .main__section__text__textarea {
+    text-align: center;
+    width: 85vw;
+    padding: 0;
+  }
+  /* sessao onde aparece o texto*/
+  .main__section__textbox__ {
+    height: 20vh;
+    margin: 5%;
+  }
+  /* img menino olhando pro diamante*/
+  .main__section__textbox__image {
+    display: none;
+  }
+  /*alerta letras minusculas*/
+  .main__div {
+    display: flex;
+    justify-content: center;
+  }
+  /* botoes de cripto e descripto*/
+  .main__section__text__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  /*botao de copiar*/
+  .main__section__textbox__copybutton {
+    padding: 5%;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1023px) {
+  /* header alura*/
+  .header__nav__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* sessao que engloba onde digita o texto e onde mostra */
+  .main__principal__section__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  /* sessao onde digita o texto */
+  .main__section__text__textarea {
+    text-align: center;
+    width: 65vw;
+    padding: 0;
+  }
+  /* sessao onde aparece o texto*/
+  .main__section__textbox__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  /* img menino olhando pro diamante*/
+  .main__section__textbox__image {
+    display: none;
+  }
+  /*alerta letras minusculas*/
+  .main__div {
+    display: flex;
+    justify-content: center;
+  }
+  /* botoes de cripto e descripto*/
+  .main__section__text__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  /*botao de copiar*/
+  .main__section__textbox__copybutton {
+    padding: 5%;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  /* header alura*/
+  .header__nav__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* sessao que engloba onde digita o texto e onde mostra */
+  .main__principal__section__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    width: 100vw;
+  }
+  /* sessao onde digita o texto */
+  .main__section__text__textarea {
+    width: 95%;
+  }
+  /* texto onde é mostrado o resultado*/
+  .main__section__textbox__textarea {
+  }
+  .main__section__textbox__ {
+  }
+  /* img menino olhando pro diamante*/
+  .main__section__textbox__image {
+  }
+  /*alerta letras minusculas*/
+  .main__div {
+    display: flex;
+    justify-content: center;
+  }
+  /* botoes de cripto e descripto*/
+  .main__section__text__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  /* Portrait styles here */
+}
+/* Landscape */
+@media screen and (orientation: landscape) {
+  /* Landscape styles here */
+}
+
+/* CSS for iPhone, iPad, and Retina Displays */
+
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min--moz-device-pixel-ratio: 1.5),
+  only screen and (min-device-pixel-ratio: 1.5) {
+}
+
+/* iPhone Portrait */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}
+
+/* iPhone Landscape */
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+}
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (orientation: portrait) {
+}
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (orientation: landscape) {
+}
