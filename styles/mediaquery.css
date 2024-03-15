@@ -34,7 +34,8 @@
   /* sessao onde digita o texto */
   .main__section__text__textarea {
     text-align: center;
-    width: 90vw;
+    width: 80vw;
+    height: 35vh;
     padding: 0;
   }
 
@@ -44,7 +45,7 @@
     margin: 10%;
     width: 85%;
   }
- 
+
   /* sessao onde o texto é mostrado */
   .main__section__textbox__textarea {
     width: 90%;
@@ -88,6 +89,7 @@
   .main__section__text__textarea {
     text-align: center;
     width: 85vw;
+    height: 40vh;
     padding: 0;
   }
   /* sessao onde aparece o texto*/
@@ -213,26 +215,8 @@
 @media screen and (orientation: landscape) {
   /* Landscape styles here */
 }
-
-/* CSS for iPhone, iPad, and Retina Displays */
-
-/* Non-Retina */
-@media screen and (-webkit-max-device-pixel-ratio: 1) {
-}
-
-/* Retina */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min--moz-device-pixel-ratio: 1.5),
-  only screen and (min-device-pixel-ratio: 1.5) {
-}
-
-/* iPhone Portrait */
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
-}
-
 /* iPhone Landscape */
-@media screen and (max-device-width: 480px) and (orientation: landscape) {
+@media screen and (max-device-width: 932px) and (orientation: landscape) {
 }
 
 /* iPad Portrait */
