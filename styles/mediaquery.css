@@ -200,18 +200,134 @@
   }
 }
 
-/* Portrait */
-@media screen and (orientation: portrait) {
-  /* Portrait styles here */
-}
 /* Landscape */
 @media screen and (orientation: landscape) {
   /* Landscape styles here */
-}
-/* iPhone Landscape */
-@media screen and (max-device-width: 932px) and (orientation: landscape) {
-}
+  @media all and (max-width: 668px) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* header alura*/
+    .header__nav__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* sessao que engloba onde digita o texto e onde mostra */
+    .main__principal__section__ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+    /* sessao onde digita o texto */
+    .main__section__text__textarea {
+      text-align: center;
+      width: 100vw;
+      height: 30vh;
+      padding: 0;
+    }
+    .main__section__textbox__ {
+      height: 50vh;
+    }
+    /* sessao onde o texto é mostrado */
+    .main__section__textbox__textarea {
+      text-align: center;
+    }
 
+    /*botao de copiar*/
+    .main__section__textbox__copybutton {
+      padding: 5%;
+      width: 50%;
+    }
+  }
+  @media all and (max-width: 897px) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* header alura*/
+    .header__nav__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* sessao que engloba onde digita o texto e onde mostra */
+    .main__principal__section__ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+    /* sessao onde digita o texto */
+    .main__section__text__textarea {
+      text-align: center;
+      width: 95vw;
+      height: 30vh;
+      padding: 0;
+    }
+    .main__section__textbox__ {
+      height: 50vh;
+      margin: 2%;
+    }
+    /* sessao onde o texto é mostrado */
+    .main__section__textbox__textarea {
+      text-align: center;
+    }
+
+    /*botao de copiar*/
+    .main__section__textbox__copybutton {
+      padding: 4%;
+      width: 50%;
+    }
+  }
+  @media all and (max-width: 935px) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    /* header alura*/
+    .header__nav__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    /* sessao que engloba onde digita o texto e onde mostra */
+    .main__principal__section__ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0;
+    }
+    /* sessao onde digita o texto */
+    .main__section__text__textarea {
+      text-align: center;
+      width: 95vw;
+      height: 35vh;
+      padding: 0;
+    }
+    .main__section__textbox__ {
+      height: 45vh;
+      width: 70vw;
+      margin: 2%;
+    }
+    /* sessao onde o texto é mostrado */
+    .main__section__textbox__textarea {
+      text-align: center;
+      width: 90%;
+    }
+
+    /*botao de copiar*/
+    .main__section__textbox__copybutton {
+      padding: 4%;
+      width: 50%;
+    }
+  }
+}
 /* iPad Portrait */
 @media screen and (min-device-width: 481px) and (orientation: portrait) {
 }
