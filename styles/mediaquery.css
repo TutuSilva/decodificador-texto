@@ -89,7 +89,7 @@
   .main__section__text__textarea {
     text-align: center;
     width: 85vw;
-    height: 40vh;
+    height: 50vh;
     padding: 0;
   }
   /* sessao onde aparece o texto*/
@@ -188,13 +188,6 @@
     width: 95%;
   }
   /* texto onde é mostrado o resultado*/
-  .main__section__textbox__textarea {
-  }
-  .main__section__textbox__ {
-  }
-  /* img menino olhando pro diamante*/
-  .main__section__textbox__image {
-  }
   /*alerta letras minusculas*/
   .main__div {
     display: flex;
